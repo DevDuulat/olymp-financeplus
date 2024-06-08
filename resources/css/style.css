@@ -1,0 +1,3 @@
+.card {
+    @apply border bg-white rounded-lg border-solid border-[#e0e0e0];
+}
