@@ -7,10 +7,13 @@
     "require": {
         "php": "^8.1",
         "filament/filament": "^3.2",
+        "firefly/filament-blog": "^2.0",
+        "geo-sot/filament-env-editor": "^0.0.4",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
-        "laravel/tinker": "^2.8"
+        "laravel/tinker": "^2.8",
+        "shuvroroy/filament-spatie-laravel-backup": "^2.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
