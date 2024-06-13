@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Faq;
+
 class PageController extends Controller
 {
     public function index()
     {
-        return view('pages.home');
+        $faqs = Faq::take(5)->get();
+        return view('pages.home', compact('faqs'));
     }
     public function about()
     {
