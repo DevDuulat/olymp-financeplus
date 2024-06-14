@@ -5,10 +5,10 @@
 ## Prerequisites
 
 List any prerequisites that are needed to run your project, such as:
-- PHP (version)
+- PHP (8.1 and above)
 - Composer
 - Node.js & npm
-- MySQL (version)
+- MySQL
 
 ## Installation
 
