@@ -54,7 +54,8 @@
         </div>
 
         <div class="flex items-center justify-center w-full h-96 lg:w-1/2">
-            <img class="object-cover w-full h-full max-w-2xl rounded-md" src="https://placehold.co/600x400" alt="glasses photo">
+            <img class="object-cover w-full h-full max-w-2xl rounded-md" src="{{ asset('images/IMG_2482.webp') }}" alt="glasses photo">
         </div>
+
     </div>
 @endsection
