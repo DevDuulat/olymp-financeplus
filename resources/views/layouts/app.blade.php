@@ -9,7 +9,6 @@
 
     @vite('resources/css/app.css')
 
-
 </head>
 <body class="bg-slate-50">
 @include('includes.header')
