@@ -8,7 +8,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     @vite('resources/css/app.css')
-    @vite('resources/css/style.css')
+
 
 </head>
 <body class="bg-slate-50">
