@@ -23,7 +23,8 @@ class PageController extends Controller
 
     public function faq()
     {
-        return view('pages.faq');
+        $faqs = Faq::take(5)->get();
+        return view('pages.faq', compact('faqs'));
     }
 
     public function news()
