@@ -55,7 +55,7 @@ List any prerequisites that are needed to run your project, such as:
    php artisan migrate
    ```
 
-7. **Seed the database (if applicable):**
+7. **Seed the database:**
 
    ```bash
    php artisan db:seed
