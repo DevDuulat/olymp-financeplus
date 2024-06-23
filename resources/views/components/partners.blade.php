@@ -1,9 +1,30 @@
-<div class="mx-auto max-w-6xl py-8">
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-5 lg:gap-8">
-        <div class="h-32 rounded-lg bg-cover bg-center bg-[url('https://placehold.co/600x400')]"></div>
-        <div class="h-32 rounded-lg bg-cover bg-center bg-[url('https://placehold.co/600x400')]"></div>
-        <div class="h-32 rounded-lg bg-cover bg-center bg-[url('https://placehold.co/600x400')]"></div>
-        <div class="h-32 rounded-lg bg-cover bg-center bg-[url('https://placehold.co/600x400')]"></div>
-        <div class="h-32 rounded-lg bg-cover bg-center bg-[url('https://placehold.co/600x400')]"></div>
+<style>
+    .partners {
+        border-radius: 0.5rem;
+        height: 15rem;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+</style>
+
+<div class="container py-8">
+    <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="partners" style="background-image: url('https://placehold.co/600x400');"></div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="partners" style="background-image: url('https://placehold.co/600x400');"></div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="partners" style="background-image: url('https://placehold.co/600x400');"></div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="partners" style="background-image: url('https://placehold.co/600x400');"></div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="partners" style="background-image: url('https://placehold.co/600x400');"></div>
+        </div>
     </div>
 </div>

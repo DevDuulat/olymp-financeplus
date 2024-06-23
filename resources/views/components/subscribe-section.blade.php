@@ -1,24 +1,94 @@
-<section class="subscribe-section">
-    <div class="mx-auto max-w-6xl py-8">
-        <div class="bg-[#34495e] rounded-lg text-white h-auto w-full flex flex-col items-center justify-center text-center p-6 space-y-4">
-            <div class="max-w-96 flex flex-col items-center justify-center space-y-3">
-                <h1 class="text-3xl font-bold mb-1">Ваш надежный криптообменник</h1>
-                <p class="text-base">Присоединяйтесь к нам сегодня и начните обменивать биткоин, эфир и другие криптовалюты с легкостью и уверенностью.</p>
-                <div class="pt-3 flex flex-col space-y-4 items-center">
-                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 w-full sm:w-auto">
-                        <input type="text" placeholder="Ваш email" class="px-4 py-2 rounded border border-gray-300 w-full sm:w-auto">
-                        <a class="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500" href="#">
-                            <span class="absolute -start-full transition-all group-hover:start-4">
-                                <svg class="size-5 rtl:rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
-                            </span>
-                            <span class="text-sm font-medium transition-all group-hover:ms-4"> Зарегистрироваться </span>
-                        </a>
-                    </div>
-                </div>
+<style>
+    .newsletter-subscribe {
+        color: #313437;
+        padding: 55px 74px;
+    }
 
-            </div>
+    .newsletter-subscribe p {
+        color: #7d8285;
+        line-height: 1.5;
+    }
+
+    .newsletter-subscribe h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        line-height: 1.5;
+        padding-top: 0;
+        margin-top: 0;
+        color: inherit;
+    }
+
+    .newsletter-subscribe .intro {
+        font-size: 16px;
+        max-width: 500px;
+        margin: 0 auto 25px;
+    }
+
+    .newsletter-subscribe .intro p {
+        margin-bottom: 35px;
+    }
+
+    .newsletter-subscribe form {
+        justify-content: center;
+    }
+
+    .newsletter-subscribe form .form-control {
+        background: #eff1f4;
+        border: none;
+        border-radius: 3px;
+        box-shadow: none;
+        outline: none;
+        color: inherit;
+        text-indent: 9px;
+        height: 45px;
+        margin-right: 10px;
+        min-width: 250px;
+    }
+
+    .newsletter-subscribe form .btn {
+        padding: 16px 32px;
+        border: none;
+        background: none;
+        box-shadow: none;
+        text-shadow: none;
+        opacity: 0.9;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 0.4px;
+        line-height: 1;
+    }
+
+    .newsletter-subscribe form .btn:hover {
+        opacity: 1;
+    }
+
+    .newsletter-subscribe form .btn:active {
+        transform: translateY(1px);
+    }
+
+    .newsletter-subscribe form .btn-primary {
+        background-color: #055ada !important;
+        color: #fff;
+        outline: none !important;
+    }
+
+
+
+    .newsletter {
+        color: #0062cc !important;
+    }
+</style>
+<div class="newsletter-subscribe mt-5 container">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center newsletter">Subscribe to our Newsletter</h2>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
+        <form class="form-inline" method="post">
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Your Email"></div>
+            <div class="form-group"><button class="btn btn-primary" type="button">Subscribe </button></div>
+        </form>
     </div>
-</section>
+</div>

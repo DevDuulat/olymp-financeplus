@@ -20,3 +20,4 @@ Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::get('/faq', [PageController::class, 'faq'])->name('faq');
 Route::get('/news', [PageController::class, 'news'])->name('news');
 Route::get('/partners', [PageController::class, 'partners'])->name('partners');
+Route::get('/posts/{slug}', [PageController::class, 'PostShow'])->name('post.show');

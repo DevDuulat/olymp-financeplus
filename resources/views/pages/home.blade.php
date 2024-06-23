@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('components.banner')
-    @include('components.partners')
-    @include('components.reviews')
+    @include('components.hero')
+{{--    @include('components.partners')--}}
     @include('components.blog')
-    @include('components.subscribe-section')
-    @include('components.faq')
+{{--    @include('components.reviews')--}}
+{{--    @include('components.subscribe-section')--}}
+{{--    @include('components.faq')--}}
 @endsection

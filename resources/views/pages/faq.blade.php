@@ -1,35 +1,38 @@
 @extends('layouts.app')
 
 @section('content')
-    <section>
-        <div class="container px-6 py-10 mx-auto">
-            <h1 class="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white">Часто задаваемые вопросы</h1>
-
-            <hr class="my-6 border-gray-200 dark:border-gray-700">
-
-            <div>
-                @foreach($faqs as $faq)
-                    <div>
-                        <button class="faq-question flex items-center focus:outline-none" data-target="faq-{{ $faq->id }}">
-                            <svg class="faq-icon flex-shrink-0 w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path class="minus-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
-                                <path class="plus-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
-                            </svg>
-                            <h1 class="mx-4 text-xl text-gray-700 dark:text-white">{{ $faq->question }}</h1>
-                        </button>
-
-                        <div id="faq-{{ $faq->id }}" class="faq-answer flex mt-8 md:mx-10">
-                            <span class="border border-blue-500"></span>
-                            <p class="max-w-3xl px-4 text-gray-500 dark:text-gray-300">
-                                {{ $faq->answer }}
-                            </p>
+    <section class="bg-light py-3 py-md-5">
+        <div class="container">
+            <div class="row gy-5 gy-lg-0 align-items-lg-center">
+                <div class="col-12 col-lg-6">
+                    <img class="img-fluid rounded" loading="lazy" src="./assets/img/faq-img-1.png" alt="How can we help you?">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row justify-content-xl-end">
+                        <div class="col-12 col-xl-11">
+                            <h2 class="h1 mb-3">How can we help you?</h2>
+                            <p class="lead fs-4 text-secondary mb-5">We hope you have found an answer to your question. If you need any help, please search your query on our Support Center or contact us via email.</p>
+                            <div class="accordion accordion-flush" id="accordionExample">
+                                @foreach($faqs as $faq)
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="heading-{{ $faq->id }}">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $faq->id }}" aria-expanded="true" aria-controls="collapse-{{ $faq->id }}">
+                                                {{ $faq->question }}
+                                            </button>
+                                        </h2>
+                                        <div id="collapse-{{ $faq->id }}" class="accordion-collapse collapse show" aria-labelledby="heading-{{ $faq->id }}" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                {!! $faq->answer !!} <!-- Assuming answer might have HTML content -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
                         </div>
                     </div>
-
-                    <hr class="my-8 border-gray-200 dark:border-gray-700">
-                @endforeach
+                </div>
             </div>
         </div>
     </section>
-    <script src="{{ asset('js/faq.js') }}"></script>
+
 @endsection
